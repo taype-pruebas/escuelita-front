@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <style>
+      body {
+        background-color: rgb(13, 116, 189);
+      }
+
+      #container {
+        padding: 3rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      .card p {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="title" style="color: black"> </a>
+      </div>
+    </nav>
+
+    <div id="container"></div>
+
+    <script src="js/plugins.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $("body").addClass("loaded");
+      });
+    </script>
+    <script src="./src/des.js"></script>
+  </body>
+</html>
